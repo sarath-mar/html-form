@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+  </head>
+  <body> 
+    
+      <div class="container">
+        <h2>Register</h2>
+        <p>Create your account. It's free and only takes a minute.</p>
+        <form>
+          <div class="details names">
+            <i class="fa fa-solid fa-user"></i>
+            <input type="text" placeholder="First Name" class="name" required>
+            <span>
+              <i class="fa fa-solid fa-user"></i>
+              <input type="text" placeholder="Last Name" class="name" required>
+            </span>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email" class="other" required>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-solid fa-mobile"></i>
+            <input type="tel" placeholder="Mobile" class="other" pattern="[0-9]{10}" required>
+          </div>
+
+          <div class="details">
+            <label>Date of Birth:</label>
+            <input type="date"  class="other dob" >
+          </div>
+
+          <div class="details">
+            <label>Upload your Resume:</label>
+            <input type="file"  class="other file" required>
+          </div>
+
+          <div class="details">
+            <label>Proficiency in English:</label>
+            <input type="range"  class="other range">
+          </div>
+
+          <div class="details">
+            <textarea name="message" placeholder="Your Message Here!!" cols="50" rows="5"></textarea>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" class="other">
+          </div>
+
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" class="other">
+          </div>
+
+          <div class="details">
+            <input type="radio" name="gender">
+            <label class="gender">Male</label>
+            <input type="radio" name="gender">
+            <label class="gender">Female</label>
+            <input type="radio" name="gender">
+            <label class="gender">Prefer Not to Say</label>
+          </div>
+
+          <div class="details">
+            <select class="select">
+              <option>Choose Your Country</option>
+              <option>Afghanisthan</option>
+              <option>Algeria</option>
+              <option>Belgium</option>
+              <option>Canada</option>
+              <option>Denmark</option>
+              <option>Egypt</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Hungary</option>
+              <option>India</option>
+              <option>Japan</option>
+              <option>Korea</option>
+              <option>Lalaysia</option>
+              <option>Nigeria</option>
+              <option>Oman</option>
+              <option>Peru</option>
+              <option>Qatar</option>
+              <option>Russia</option>
+              <option>Switzerland</option>
+              <option>Turkey</option>
+              <option>United states</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zimbawe</option>
+            </select>
+          </div>
+
+          <div class="details">
+            <label>Select languages known:</label>
+            <select class="select" multiple>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Malayalam</option>
+              <option>Hindi</option>
+              <option>Arabic</option>
+            </select>
+          </div>
+          <div class="details check">
+            <input type="checkbox">
+            <label>
+              I accept the <a href="#" class="green">Terms of Use</a> & <a href="#" class="green">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="details">
+            <input type="submit" value="Register Now" class="btn">
+          </div>
+        </form>
+      </div>
+      
+      <h6>Already have an account? &nbsp; <a href="#">Sign in</a></h6>
+      
+    
+  </body>
+</html>
